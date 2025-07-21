@@ -1,39 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Pounder Ads Only</title>
-  <style>
-    body {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      padding-top: 100px;
-    }
-    button {
-      background: #ff6600;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 20px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
+  <title>Pounder Test</title>
 </head>
-<body>
-
-  <h1>🔥 Click the Button to Open Ad</h1>
-  <button onclick="showAd()">Show Pounder Ad</button>
+<body style="background:black; color:white; text-align:center; padding-top:100px;">
+  <h1>🔥 Pounder Ad Trigger</h1>
+  <button onclick="openAd()">Click Me to Show Pounder Ad</button>
 
   <script>
-    function showAd() {
-      const s = document.createElement('script');
+    function openAd() {
+      // Force-open a new tab or popunder
+      window.open('https://www.google.com', '_blank'); // ✅ Replace this with your popunder target if known
+
+      // Inject original pounder script after user interaction
+      var s = document.createElement('script');
       s.src = '//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js';
       document.body.appendChild(s);
     }
   </script>
-
 </body>
 </html>
