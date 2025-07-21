@@ -2,41 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adsterra Pounder Ad</title>
+  <title>Pounder Ads Only</title>
   <style>
     body {
-      margin: 0;
-      background: #000;
+      background: #111;
       color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
       text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
     }
     button {
-      padding: 12px 20px;
-      background: #ff5c5c;
-      border: none;
-      border-radius: 8px;
+      background: #ff6600;
       color: white;
-      font-size: 18px;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 10px;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h1>🔥 Tap Below to Open Ad</h1>
-  <button onclick="openAd()">Show Pounder Ad</button>
+
+  <h1>🔥 Click the Button to Open Ad</h1>
+  <button onclick="showAd()">Show Pounder Ad</button>
 
   <script>
-    function openAd() {
-      let s = document.createElement('script');
+    function showAd() {
+      const s = document.createElement('script');
       s.src = '//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js';
       document.body.appendChild(s);
     }
   </script>
+
 </body>
 </html>
