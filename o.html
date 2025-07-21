@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pounder Ads Page</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Click Button to Activate Pounder Ad</h1>
+  <button onclick="showPounder()">CLICK ME</button>
+
+  <script>
+    function showPounder() {
+      // Open dummy tab (bait for popunder)
+      window.open('https://www.google.com', '_blank');
+
+      // Inject pounder ad script
+      var adScript = document.createElement('script');
+      adScript.type = 'text/javascript';
+      adScript.src = '//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js';
+      document.body.appendChild(adScript);
+    }
+  </script>
+</body>
+</html>
