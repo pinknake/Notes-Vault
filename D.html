@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔥 Unlimited Pounder Ads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding-bottom: 100px;
+    }
+    h1 {
+      background: #4caf50;
+      color: white;
+      padding: 15px;
+      margin: 0;
+    }
+    .ad-box {
+      margin: 20px auto;
+      width: 100%;
+      max-width: 360px;
+    }
+    .ad-bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #ddd;
+      z-index: 999;
+      padding: 10px 0;
+    }
+    .ad-social {
+      position: fixed;
+      bottom: 80px;
+      right: 10px;
+      width: 300px;
+      max-width: 90vw;
+      z-index: 9999;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>💸 Earning Boost - Pounder Ads</h1>
+
+<!-- 🔁 Auto Reloading Ad Box -->
+<div id="autoAds" class="ad-box"></div>
+
+<!-- 🖼️ Native Ad -->
+<div class="ad-box">
+  <script async src="//pl26993212.profitableratecpm.com/f411671ee1d0146704d13266d9687f63/invoke.js"></script>
+  <div id="container-f411671ee1d0146704d13266d9687f63"></div>
+</div>
+
+<!-- 🔲 SocialBar Floating -->
+<div class="ad-social">
+  <script src="//pl27011960.profitableratecpm.com/ef/1a/43/ef1a432319118bcb45467ce0fd7f2ff4.js"></script>
+</div>
+
+<!-- 🔻 Bottom Fixed Ad (iframe) -->
+<div class="ad-bottom">
+  <div id="bottomAd"></div>
+</div>
+
+<!-- 💥 Popunder Script (runs once per page) -->
+<script src="//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js"></script>
+
+<script>
+// 🔁 Repeating IFRAME 320x50 Ad Loader
+function loadIframeAd() {
+  const container = document.getElementById("autoAds");
+  container.innerHTML = ''; // clear previous ad
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.innerHTML = `
+    atOptions = {
+      'key': '2839a3c1ca8fc9e07589a1b83ea67a15',
+      'format': 'iframe',
+      'height': 50,
+      'width': 320,
+      'params': {}
+    };
+  `;
+  const js = document.createElement("script");
+  js.src = "//www.highperformanceformat.com/2839a3c1ca8fc9e07589a1b83ea67a15/invoke.js";
+  container.appendChild(script);
+  container.appendChild(js);
+}
+
+// 🔁 Load ad every 25 seconds
+loadIframeAd();
+setInterval(loadIframeAd, 25000); // 25 seconds
+
+// ✅ Bottom Ad (load once)
+document.getElementById("bottomAd").innerHTML = `
+  <script type="text/javascript">
+    atOptions = {
+      'key': '2839a3c1ca8fc9e07589a1b83ea67a15',
+      'format': 'iframe',
+      'height': 50,
+      'width': 320,
+      'params': {}
+    };
+  </script>
+  <script src="//www.highperformanceformat.com/2839a3c1ca8fc9e07589a1b83ea67a15/invoke.js"></script>
+`;
+</script>
+
+</body>
+</html>
