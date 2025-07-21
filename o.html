@@ -1,38 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Popunder Ad Only</title>
+  <meta charset="UTF-8">
+  <title>🔥 Play Game - Earn Rewards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #121212;
+      margin: 0;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
       color: white;
-      text-align: center;
-      font-family: sans-serif;
-      margin-top: 100px;
+      overflow-x: hidden;
     }
-    button {
-      padding: 15px 30px;
-      font-size: 20px;
-      background-color: #ff3d00;
-      color: white;
+
+    .header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      color: #00ffcc;
+      margin: 0;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    .play-btn {
+      background: #00ffcc;
+      color: black;
+      font-weight: bold;
       border: none;
-      border-radius: 8px;
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
       cursor: pointer;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+
+    .ads-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* Sticky Bottom Banner */
+    .sticky-ad {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 9999;
+      background-color: #000;
+      padding: 5px 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>🔥 Click Below to Unlock Content</h1>
-  <button onclick="loadPopunder()">Unlock</button>
+  <div class="header">
+    <h1>🎮 Play & Win Rewards!</h1>
+    <button class="play-btn" onclick="showMoreAds()">Start Game</button>
+  </div>
+
+  <div class="ads-container">
+    <!-- Native Banner Ad -->
+    <script async="async" data-cfasync="false" src="//pl26993212.profitableratecpm.com/f411671ee1d0146704d13266d9687f63/invoke.js"></script>
+    <div id="container-f411671ee1d0146704d13266d9687f63"></div>
+  </div>
+
+  <!-- Sticky 320x50 Ad -->
+  <div class="sticky-ad">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '2839a3c1ca8fc9e07589a1b83ea67a15',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/2839a3c1ca8fc9e07589a1b83ea67a15/invoke.js"></script>
+  </div>
+
+  <!-- Social Bar -->
+  <script type='text/javascript' src='//pl27011960.profitableratecpm.com/ef/1a/43/ef1a432319118bcb45467ce0fd7f2ff4.js'></script>
+
+  <div class="footer">
+    © 2025 BharatVerse | All Rights Reserved
+  </div>
 
   <script>
-    function loadPopunder() {
-      // Popunder ad script injection
-      let script = document.createElement('script');
-      script.src = "//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js";
-      script.type = "text/javascript";
-      document.body.appendChild(script);
+    function showMoreAds() {
+      alert("🎯 Keep playing to earn rewards! (Ads loading...)");
     }
   </script>
 
