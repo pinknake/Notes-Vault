@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pounder Ads Page</title>
+  <title>Popunder Ad Only</title>
   <style>
     body {
-      background-color: #000;
+      background: #121212;
       color: white;
       text-align: center;
-      padding-top: 100px;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
+      margin-top: 100px;
     }
     button {
       padding: 15px 30px;
       font-size: 20px;
-      background-color: #ff5722;
+      background-color: #ff3d00;
       color: white;
       border: none;
       border-radius: 8px;
@@ -22,20 +22,19 @@
   </style>
 </head>
 <body>
-  <h1>🔥 Click Button to Activate Pounder Ad</h1>
-  <button onclick="showPounder()">CLICK ME</button>
+
+  <h1>🔥 Click Below to Unlock Content</h1>
+  <button onclick="loadPopunder()">Unlock</button>
 
   <script>
-    function showPounder() {
-      // Open dummy tab (bait for popunder)
-      window.open('https://www.google.com', '_blank');
-
-      // Inject pounder ad script
-      var adScript = document.createElement('script');
-      adScript.type = 'text/javascript';
-      adScript.src = '//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js';
-      document.body.appendChild(adScript);
+    function loadPopunder() {
+      // Popunder ad script injection
+      let script = document.createElement('script');
+      script.src = "//pl27212421.profitableratecpm.com/0f/59/fd/0f59fdb62ed9d691164bfa4b554309dd.js";
+      script.type = "text/javascript";
+      document.body.appendChild(script);
     }
   </script>
+
 </body>
 </html>
