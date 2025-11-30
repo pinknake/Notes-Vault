@@ -173,7 +173,7 @@
           ctx.drawImage(img, 0, 0);
           const scanner = new Html5Qrcode("reader");
           scanner.scanFile(file, true).then(decoded => {
-            document.getElementById("result").innerText = decoded;
+           document.getElementById("result").innerHTML = makeClickable(decoded);
             scanner.clear();
           }).catch(err => alert("Failed to scan: " + err));
         };
@@ -197,7 +197,7 @@
         const cameraId = devices[0].id;
         const scanner = new Html5Qrcode("reader");
         scanner.start(cameraId, { fps: 10, qrbox: 250 }, (decodedText) => {
-          document.getElementById("result").innerText = decodedText;
+          document.getElementById("result").innerHTML = makeClickable(decoded);
         });
       }
     });
