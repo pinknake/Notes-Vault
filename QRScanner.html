@@ -147,6 +147,17 @@
         alert("Sharing not supported in this browser");
       }
     }
+
+
+    function makeClickable(text) {
+  const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}|upi:[^\s]+)/gi;
+  return text.replace(urlRegex, function(url) {
+    let clickableUrl = url;
+    if (url.startsWith("www")) clickableUrl = "https://" + url;
+    return `<a href="${clickableUrl}" target="_blank" style="color:#007bff;font-weight:bold;">${url}</a>`;
+  });
+}
+    
     function scanImage(event) {
       const file = event.target.files[0];
       if (!file) return;
